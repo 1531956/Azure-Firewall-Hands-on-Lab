@@ -7,8 +7,7 @@ The focus is on **traffic flow control, outbound filtering, and secure inbound a
 ---
 
 ## Architecture
-
-![Azure Firewall Architecture Diagram](./images/architecture.png)
+[Firewall Architecture - Google Drawings.pdf](https://github.com/user-attachments/files/24722424/Firewall.Architecture.-.Google.Drawings.pdf)
 
 **Components**
 - Azure Virtual Network
