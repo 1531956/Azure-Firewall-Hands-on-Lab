@@ -37,8 +37,8 @@ The focus is on **traffic flow control, outbound filtering, and secure inbound a
 
 ### Application Rule – Controlled Web Access
 Allows outbound HTTP/HTTPS traffic **only** to Google.
-
-![Application Rule – Allow Google](./images/app-rule-google.png)
+<img width="1918" height="818" alt="ApplicationRule" src="https://github.com/user-attachments/assets/7f1a24b6-e077-4af4-ae40-83a4c929a21c" />
+<img width="1918" height="821" alt="AppRuleSuccess" src="https://github.com/user-attachments/assets/636d6138-d94e-49d8-ba59-d869f468e1bc" />
 
 - Source: Workload subnet (`10.0.1.0/24`)
 - Protocols: HTTP, HTTPS
@@ -48,8 +48,8 @@ Allows outbound HTTP/HTTPS traffic **only** to Google.
 
 ### Network Rule – DNS Restriction
 Allows DNS queries only to trusted public DNS servers.
-
-![Network Rule – DNS](./images/network-rule-dns.png)
+<img width="1918" height="817" alt="NetworkRule" src="https://github.com/user-attachments/assets/7d6e73a0-6a6e-4a9c-8916-d0fb6e798fc8" />
+<img width="1918" height="818" alt="NetRuleSuccess" src="https://github.com/user-attachments/assets/1b3f87cf-4abe-4ba2-98d6-44e84698d6e5" />
 
 - Protocol: UDP
 - Port: 53
@@ -59,8 +59,8 @@ Allows DNS queries only to trusted public DNS servers.
 
 ### DNAT Rule – Secure RDP Access
 Provides RDP access through the firewall without assigning a public IP to the VM.
-
-![DNAT Rule – RDP](./images/dnat-rule-rdp.png)
+<img width="1918" height="820" alt="DNATRule" src="https://github.com/user-attachments/assets/f5d41460-dfec-4c31-b542-091fa84ad508" />
+<img width="1918" height="820" alt="DNATRuleSuccess" src="https://github.com/user-attachments/assets/cb1d8993-3ab6-4efd-ac17-8393645201a1" />
 
 - Public IP: Azure Firewall
 - Port: TCP 3389
@@ -84,15 +84,13 @@ This ensures **all outbound traffic** from the workload subnet is inspected by t
 
 ### Allowed Traffic
 Outbound access to `google.com` is successful.
-
-![Allowed Traffic – Google](./images/test-allowed.png)
+<img width="1916" height="1015" alt="RDPGoogle" src="https://github.com/user-attachments/assets/2ea0f32f-d05d-41fe-9344-671439a219f6" />
 
 ---
 
 ### Blocked Traffic
 Outbound access to `microsoft.com` is blocked by default-deny behavior.
-
-![Blocked Traffic – Microsoft](./images/test-blocked.png)
+<img width="1918" height="1016" alt="RDPMicrosoft" src="https://github.com/user-attachments/assets/43c7d539-0ae6-4dd3-937b-a40f96951903" />
 
 Error observed:
 > Action: Deny. Reason: No rule matched.
