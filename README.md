@@ -69,8 +69,7 @@ Provides RDP access through the firewall without assigning a public IP to the VM
 ---
 
 ## Routing (UDR)
-
-![Route Table – Force Firewall](./images/route-table.png)
+<img width="1918" height="820" alt="DefaultRoute" src="https://github.com/user-attachments/assets/209f5871-f629-4626-95d1-71f934ced723" />
 
 - Destination: `0.0.0.0/0`
 - Next hop: Virtual appliance
